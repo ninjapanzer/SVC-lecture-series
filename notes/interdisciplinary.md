@@ -1,0 +1,4 @@
+# Topics
+- Digital humanities
+- Thinking about tasks as programmable solutions
+- Can I compute Happiness
