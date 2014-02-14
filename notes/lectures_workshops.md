@@ -7,8 +7,8 @@
 
 ## Overview
 ### Goals
-- Expose students to techniques and ideologies used in open source community and small to medium sized companies.
-- Expose students of other departments to involve themselves in Compute Science
+- Expose students to techniques and ideologies used in the open source community and small to medium sized companies.
+- Expose students of other departments to involve themselves in Computer Science
 - Promote open source involvement and values.
 - Make students more competitive earlier in their careers by inspiring them to become involved in social coding and take entrepreneurial risks.
 
