@@ -1,0 +1,27 @@
+mixin titleSlide(titleData)
+  section
+    h1
+      = titleData.title
+    h3 
+      = titleData.subtitle
+    p
+      small
+        | Paul Scarrone
+        br
+        | @PaulSCoders
+    aside.notes
+      | Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
+
+mixin ulSlide(title, list)
+  section
+    h3= title
+    ul
+      - each item in list
+        li= item
+
+mixin olSlide(title, list)
+  section
+    h3= title
+    ol
+      - each item in list
+        li= item

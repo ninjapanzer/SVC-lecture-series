@@ -1,22 +1,27 @@
 - var revealLocation = '../bower_components/reveal.js/'
+- var titlePage=""
 doctype html
 html(lang="en")
-  
+
+  include ../shared/slide_mixins
+
   include ../shared/head
+
+  link(rel='external' type='text/html' src="../shared/head.jade")
 
   body
     .reveal
       .slides
+        +titleSlide({title: "Agile with Github",subtitle: "Thing"})
+        +olSlide("Love the Octocat", [
+          "He is cute",
+          "he is your friend"
+          ])
         section
-          h1 Agile with Github
-          h3 Something else
-          p
-            small
-              | Paul Scarrone
-              | @PaulSCoder
-        section
-          h1 I love Github
-          h3 You should too
-          p things
+          :markdown
+            # I love Github
+            ## You should too
+                
+            things
 
     include ../shared/footer
