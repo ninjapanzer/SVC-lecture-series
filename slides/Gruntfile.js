@@ -38,7 +38,10 @@ module.exports = function(grunt) {
     watch: {
       jade: {
         files: ['**/*.jade'],
-        tasks: 'jade'
+        tasks: 'jade',
+        options:{
+          livereload: 35729
+        }
       }
     }
 
