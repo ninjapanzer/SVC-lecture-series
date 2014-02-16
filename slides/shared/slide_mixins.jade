@@ -1,3 +1,5 @@
+include fragment_mixins
+
 mixin titleSlide(titleData)
   section
     h1
@@ -15,13 +17,9 @@ mixin titleSlide(titleData)
 mixin ulSlide(title, list)
   section
     h3= title
-    ul
-      - each item in list
-        li= item
+    +ul(list)
 
 mixin olSlide(title, list)
   section
     h3= title
-    ol
-      - each item in list
-        li= item
+    +ol(list)
