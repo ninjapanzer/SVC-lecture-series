@@ -10,9 +10,8 @@ head
   link#theme(rel='stylesheet', href= revealLocation +'css/theme/moon.css')
   // For syntax highlighting
   link(rel='stylesheet', href= revealLocation + 'lib/css/zenburn.css')
-  script var revealLocation = '
-    = revealLocation
-    |'
+  script var revealLocation = '#{revealLocation}'
+
   script(type='text/javascript') document.write( '<link rel="stylesheet" href="' + revealLocation + 'css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
 
   //if lt IE 9
