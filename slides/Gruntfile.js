@@ -13,7 +13,6 @@ module.exports = function(grunt) {
     connect: {
       server: {
         options: {
-          pretty: true,
           port: port,
           base: '.'
         }
@@ -23,6 +22,7 @@ module.exports = function(grunt) {
     jade: {
       compile: {
         options: {
+          pretty: true,
           data: {
             debug: false
           }
@@ -45,6 +45,6 @@ module.exports = function(grunt) {
   });
 
   // Serve presentation locally
-  grunt.registerTask( 'serve', [ 'connect', 'watch' ] );
+  grunt.registerTask( 'serve', ['jade', 'connect', 'watch' ] );
 
 };
