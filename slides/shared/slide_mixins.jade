@@ -18,11 +18,13 @@ mixin ulSlide(title, list)
   +slide()
     h3= title
     +ul(list)
+    block
 
 mixin olSlide(title, list)
   +slide()
     h3= title
     +ol(list)
+    block
 
 mixin bigTitleSlide(title)
   +slide()
