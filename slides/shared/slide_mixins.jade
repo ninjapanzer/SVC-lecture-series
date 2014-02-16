@@ -29,7 +29,10 @@ mixin bigTitleSlide(title)
     h1= title
     block
 
-mixin markdownSlide()
-  +slide()
-    :markdown
-      block
+mixin slide()
+  section
+    block
+
+mixin slideGroup()
+  section
+    block
