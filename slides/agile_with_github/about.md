@@ -40,18 +40,34 @@
             
         - **Backlog**
             > Probabably the most critical thing about agile planning is a well cultivated backlog.
+            
             - **Example**
-            > Consider that a new feature for you application is live chat. It looks like it will take 2 sprints to complete this feature for 1 person. In the middle of your first sprint there is a critical application failure do to a change intruduced by an integrated external service that handles you users data. While the nature of this failure isn't essential for this example the part you should take away is the implied priority of a service failure.
+                > Consider that a new feature for you application is live chat. It looks like it will take 2 sprints to complete this feature for 1 person. In the middle of your first sprint there is a critical application failure do to a change intruduced by an integrated external service that handles you users data. While the nature of this failure isn't essential for this example the part you should take away is the implied priority of a service failure.
              
-            > _Unfortunatly new features often take the back seat to stability concerns. Without a stable environment that customers are willing to pay for there is noreason to create new features though._
+                > _Unfortunatly new features often take the back seat to stability concerns. Without a stable environment that customers are willing to pay for there is noreason to create new features though._
 
-            > As a result you are taken off your tasks for the sprint and applied to solving the problem with the external provider. This takes a little under a sprint to wrap up putting you in the middle of your next sprint. _So the question is how should the feature that was bumped be handled._
+                > As a result you are taken off your tasks for the sprint and applied to solving the problem with the external provider. This takes a little under a sprint to wrap up putting you in the middle of your next sprint. _So the question is how should the feature that was bumped be handled._
                 
-            > When you were reassigned from chat development it was placed on the new feature or **Roadmap** backlog and prioritized. While you were still resolving the external provider you passed over a sprint and that Chat feature was assigned to another developer who may not have had the same expertise as you do in real-time chat. (Why you were assigned in the first place). The other developer has made excellent progress but due to a lack of expertise is behind schedule. So it is decided that you will **Swarm** the problem. You do not have any work assigned yet for the last week of your sprint so you grab another developer who is finished with her sprint and the three of you approach the chat problem through a mixture of sending tasks to each other and **Pair-Programming** with all this extra help the chat feature is released a little ahead of time and you have 2 day left in your sprint. Once again we go back to the **backlog** and grab a small big of work like a 
+                > When you were reassigned from chat development it was placed on the new feature or **Roadmap** backlog and prioritized. While you were still resolving the external provider you passed over a sprint and that Chat feature was assigned to another developer who may not have had the same expertise as you do in real-time chat. (Why you were assigned in the first place). The other developer has made excellent progress but due to a lack of expertise is behind schedule. So it is decided that you will **Swarm** the problem. You do not have any work assigned yet for the last week of your sprint so you grab another developer who is finished with her sprint and the three of you approach the chat problem through a mixture of sending tasks to each other and **Pair-Programming** with all this extra help the chat feature is released a little ahead of time and you have 2 day left in your sprint. Once again we go back to the **backlog** and grab a small big of work like a 
+        
         - **Swarm**
+            > A short burst of development using additional resources to get a task back on track or released ahead of schedule
+
         - **Continuous Improvement**
+            > While this is an idealogy that is not exclusive to **Agile** or **Scrum** it is a advertised as a core "feature" of **Scrum**. The idea is that as you work through problems you will interact with legacy systems and codebases. It should be at the developers perogative to define if a useful refactor should be done while working through the assigned task. This kind of distributed decision making is another facet of the **Self-Organizing** nature of agile teams.
+
+            > How can we come to this decision?
+                > - Is the task time critical - ASAP?
+                > - What is the expected impact of the refactor? (How much churn will it introduce)
+                > - Can I fit the refactor into this sprint?
+
+            > Depending on the questions above you may decide that its not time for the refactor yet as it will not fit the priority and expected release of the task. This does not mean that the refactor will never be completed. You will create a new task with the help of your PM who will mix it back into the backlog and it will be assigned back to your or another developer soon.
             
         - **Demos**
+            > This works hand in hand with a concept called **Continuous Integration**(Huge Out of Scope until Github) Every sprint you should be able to demo you work so that **stakeholders** can see work progress if there is anything to see(sometimes there isn't). There are two reasons for **Sprint Demos**
+
+                > - Keep developers on track by giving them the opportunity to show off their work and recive some personal accolades
+                > - Reduce inter-departmental communications barriers that are common due to differences in knowledge bases. (Accounting thinks it can't talk to marketing and engineering about work because they work on different things). This initate the last stage of the Agile process. The **feedback loop**. Which crowd sources acceptance of requirements and makes sure they align with expectations before work has been totally completed.
         
     - #### Defining a roadmap    
     - #### Alerting change
