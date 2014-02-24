@@ -12,12 +12,27 @@ html(lang="en")
   body
     .reveal
       .slides
-        +titleSlide({title: "Agile with Github",subtitle: "Thing"})
-        +olSlide("Love the Octocat", [
+        +titleSlide({title: "Agile Development",subtitle: "Github"})
+        +ulSlide("Love the Octocat", [
           "He is cute",
           "he is your friend"
           ])
-        section
+          br/
+          img(src="http://octodex.github.com/images/daftpunktocat-thomas.gif" width="20%" height="20%")
+        +bigTitleSlide("Title")
+          p You are nice
+        +slideGroup()
+          +bigTitleSlide("wonder")
+          +bigTitleSlide("another one")
+        +olSlide("title", ['thing', 'otherthing'])
+        +slide()
+          p amazing
+          p super amazing
+          p Spiderman is my co-pilot
+        +slideGroup()
+          +bigTitleSlide("top")
+          +bigTitleSlide("bottom")
+        +slide
           :markdown
             # I love Github
             ## You should too
