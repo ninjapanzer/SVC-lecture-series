@@ -35,8 +35,9 @@
     - #### Defining a roadmap    
     - #### Alerting change
     - #### The backlog
-1. ### Communication
-    - #### Standup 
+1. ### Communication 
+    - #### Standup
+        > Transparancy is the best way to avoid time sinks in a project. So when you have a meeting about a project it should being with a standup. These are rather informal and cover what you did yesterday and what you are working on today in very plain language. Making it a point to verbalize an issues that could slow or halt developemnt. These are called **Blockers** and often could lead to significant loss of deveopment time. Generally every day should start off with a standup. This should changed depending on the rate of work and fluidity of the team.
     - #### Email
     - #### Chat
 1. ### Version Control 
