@@ -1,5 +1,8 @@
 ## Agile with Github
 
+#### How is this good for students now?
+#### How will it benifit them in finding a job
+
 1. ### Agile
     - #### Being Agile
         
