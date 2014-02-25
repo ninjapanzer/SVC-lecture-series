@@ -97,14 +97,32 @@
             > - [IRC][8]
         > The most important factor is that the chat log should persist users and consist of team or topic group chats
 
+1. ### Version Control
+    - #### One-Person-Project
+        > I know you are the only person working on most of your projects but lets consider what happens when you want to share your software with someone else.
+            > 1. Identify audience technical level
+            > 2. Create Installer
+            > 3. Create binary distributions
+            > 4. Docuemnt setup process
+        > An alternative:
+            > 1. Version Control
+            > 2. Docuement the 'How to run'
+            > 3. Pass along the URL to your project
+
+    - #### Dog Can't Eat Your Homework
+        > Dogs don't seem to eat homework as much as they used too
+    - #### Good Exposure
+        > You are graduating and you want to show off your portfolio to employeers but all of your code is on your computer.
+    - #### Concurrent Teams
+        - ** What happens when two people edit the same file **
+        > Version control was built around the idea that more than one person was going to interact with a file at the same time. By keeping track of the order and times when lines are changed modern version control and in many cases automaticlly merge code edits 
+    - #### Change Control
+    - #### Peer Review
+
 1. ### [Github Wokflow][9]
     - #### Git
     - #### Commits History
     - #### Branches
-1. ### Version Control 
-    - #### Concurrent Teams
-    - #### Change Control
-    - #### Peer Review
     
     
 [1]: http://en.wikipedia.org/wiki/Agile_software_development
