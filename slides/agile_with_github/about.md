@@ -97,7 +97,7 @@
             > - [IRC][8]
         > The most important factor is that the chat log should persist users and consist of team or topic group chats
 
-1. ### Github
+1. ### [Github Wokflow][9]
     - #### Git
     - #### Commits History
     - #### Branches
@@ -112,3 +112,7 @@
 [3]: http://www.mountaingoatsoftware.com/agile/scrum
 [4]: http://en.wikipedia.org/wiki/Cross-functional_team
 [5]: http://github.com
+[6]: http://hipchat.com
+[7]: http://slack.com
+[8]: http://www.irc.org/
+[9]: http://guides.github.com/overviews/flow/
