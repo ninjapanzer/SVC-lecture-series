@@ -72,25 +72,43 @@
                 > - Keep developers on track by giving them the opportunity to show off their work and recive some personal accolades
                 > - Reduce inter-departmental communications barriers that are common due to differences in knowledge bases. (Accounting thinks it can't talk to marketing and engineering about work because they work on different things). This initate the last stage of the Agile process. The **feedback loop**. Which crowd sources acceptance of requirements and makes sure they align with expectations before work has been totally completed.
         
-    - #### Defining a roadmap    
+    - #### Defining a roadmap
+        > Consider the largest features that your software will have and then try to assign them sprint sizes and priority. A **Roadmap** should only describe the next iteration of your software. In some cases this is an MVP or a budget cycle.
+
     - #### Alerting change
-    - #### The backlog
-1. ### Communication 
+        > It is not uncommon for roadmaps to require change and this change comes from engineers reporting problems and sometimes the realization that the plan being executed was not decomposed well enough.
+
+1. ### Communication
+    > In the office we see each other every day but many projects can benifit from acting like **Open Source Projects** which operate under the assumption that work will be completed asyncrynously of centeral management. There are plently of **OSS** strategies and the one that I think is most appliable to new comers is the [Github][5] process.
     - #### Standup
-        > Transparancy is the best way to avoid time sinks in a project. So when you have a meeting about a project it should being with a standup. These are rather informal and cover what you did yesterday and what you are working on today in very plain language. Making it a point to verbalize an issues that could slow or halt developemnt. These are called **Blockers** and often could lead to significant loss of deveopment time. Generally every day should start off with a standup. This should changed depending on the rate of work and fluidity of the team.
+        > Transparancy is the best way to avoid time sinks in a project. So when you have a meeting about a project it should being with a standup. These are rather informal and cover what you did yesterday and what you are working on today in very plain language. Making it a point to verbalize an issues that could slow or halt developemnt. These are called **Blockers** and often could lead to significant loss of deveopment time. Generally every day should start off with a **standup**. This should changed depending on the rate of work and fluidity of the team.
+
+        > Technology can play a major part in improving the frequency which teams can meet. For example free services like Google Hangouts can allow up to 10 people to talk simultaniously.
+
+        > It is always best if teams can cross talk during a **standup** but if the size of your team would make that difficult teams can form in any order or size that is appropriate.
+
+        > Ultimately the goal of the **standup** is to be quick and verbose about status and problems.
+
     - #### Email
     - #### Chat
-1. ### Version Control 
-    - #### Concurrent Teams
-    - #### Change Control
-    - #### Peer Review
+        > Persistant chat can be a huge success for a development team.
+            > - [Hipchat][6]
+            > - [Slack][7]
+            > - [IRC][8]
+        > The most important factor is that the chat log should persist users and consist of team or topic group chats
+
 1. ### Github
     - #### Git
     - #### Commits History
     - #### Branches
+1. ### Version Control 
+    - #### Concurrent Teams
+    - #### Change Control
+    - #### Peer Review
     
     
 [1]: http://en.wikipedia.org/wiki/Agile_software_development
 [2]: http://www.controlchaos.com/storage/scrum-articles/selforg.pdf
 [3]: http://www.mountaingoatsoftware.com/agile/scrum
 [4]: http://en.wikipedia.org/wiki/Cross-functional_team
+[5]: http://github.com
