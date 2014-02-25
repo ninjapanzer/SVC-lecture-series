@@ -12,8 +12,11 @@ html(lang="en")
   body
     .reveal
       .slides
-        +titleSlide({title: "Agile Development",subtitle: "Github"})
-        +ulSlide("Love the Octocat", [
+        +titleSlide({title: "An Agile Life",subtitle: "With Github"})
+        +slideGroup()
+          +bigTitleSlide("Octocat Loves You!")
+            img(src="./images/baraktocat.jpg" width="20%" height="20%")
+        +ulSlide("Octocat loves you", [
           "He is cute",
           "he is your friend"
           ])
