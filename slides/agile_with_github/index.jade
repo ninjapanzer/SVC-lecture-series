@@ -14,6 +14,7 @@ html(lang="en")
       .slides
         +titleSlide({title: "An Agile Life",subtitle: "With Github"})
         +slideGroup()
+          // About me start
 
           +olSlide("I Am a...",
             ["Sofware Engineer",
@@ -33,6 +34,7 @@ html(lang="en")
               +note("Alone you also learn all your bad habits")
               +note("My favorite project was something I wrote for my mother")
           +bigTitleSlide("At School")
+            | Learn to be a better you
             +speakerNotes
               +note("School has a couple of purposes in our society.")
               +note("One is for obvious and righteous expansion of our minds")
@@ -40,6 +42,7 @@ html(lang="en")
               +note("In reality what you do at school defines what you do immediately after graduation")
               +note("There are wonderful opportunities and the competition will be high so School is the best place to start marketing yourself")
           +bigTitleSlide("At Work")
+            | Coding for Cash
             +speakerNotes
               +note("If you are not learning something at work it is likely time to move on.")
               +note("When you go out there for that first job don't get the job that has all the things you already know")
@@ -51,6 +54,20 @@ html(lang="en")
             div - Paul Scarrone
             +speakerNotes
               | If you can read a book you can do anything
+          // About me end
+        
+        +slideGroup()
+          +bigTitleSlide("Agile")
+            | Things
+
+        +slideGroup()
+          +bigTitleSlide("Version Control")
+          +bigTitleSlide("Git")
+          +ulSlide("A History",[])
+
+        +slideGroup()
+          +bigTitleSlide("OSS")
+
         +slideGroup()
           +bigTitleSlide("Octocat Loves You!")
             img(src="images/baracktocat.jpg" width="50%" height="50%")
@@ -62,10 +79,6 @@ html(lang="en")
           img(src="http://octodex.github.com/images/daftpunktocat-thomas.gif" width="70%" height="70%")
         +bigTitleSlide("Title")
           p You are nice
-        +slideGroup()
-          +bigTitleSlide("Version Control")
-          +bigTitleSlide("Git")
-          +ulSlide("A History",[])
         +olSlide("title", ['thing', 'otherthing'])
         +slide()
           p amazing
