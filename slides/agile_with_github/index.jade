@@ -13,7 +13,7 @@ html(lang="en")
     .reveal
       .slides
         +titleSlide({title: "An Agile Life",subtitle: "With Github"})
-        +slideGroup()
+        +slideGroup({"data-background":'#0062AF'})
           // About me start
 
           +olFragmentSlide("I Am a...",
@@ -107,8 +107,8 @@ html(lang="en")
           +bigTitleSlide("Git")
           +ulSlide("A History",[])
 
-        +slideGroup()
-          +bigTitleSlide("OSS", {"data-background":'#0079CF'})
+        +slideGroup({"data-background":'#0079CF'})
+          +bigTitleSlide("OSS")
             :markdown
               ## Office of Secret Service
 
@@ -116,30 +116,15 @@ html(lang="en")
 
               ## Operationally Special Slackers
 
+          +bigTitleSlide("Open Source and You")
+
+        +slideGroup()
+          +bigTitleSlide("Agile Github")
+            :markdown
+              http://guides.github.com/overviews/flow/
+
         +slideGroup()
           +bigTitleSlide("Octocat Loves You!")
             img(src="images/baracktocat.jpg" width="50%" height="50%")
-        +ulSlide("Octocat loves you", [
-          "He is cute",
-          "he is your friend"
-          ])
-          br/
-          img(src="http://octodex.github.com/images/daftpunktocat-thomas.gif" width="70%" height="70%")
-        +bigTitleSlide("Title")
-          p You are nice
-        +olSlide("title", ['thing', 'otherthing'])
-        +slide()
-          p amazing
-          p super amazing
-          p Spiderman is my co-pilot
-        +slideGroup()
-          +bigTitleSlide("top")
-          +bigTitleSlide("bottom")
-        +slide
-          :markdown
-            # I love Github
-            ## You should too
-                
-            things
 
     include ../shared/footer
