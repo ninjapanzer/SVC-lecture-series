@@ -16,9 +16,9 @@ mixin note(note)
 mixin ulFragment(list)
   ul
     - each item, i in list
-      li(class="fragment visible current-fragment" data-fragment-index=i)= item
+      li(class="fragment visible" data-fragment-index=i)= item
 
 mixin olFragment(list)
   ol
     - each item, i in list
-      li(class="fragment visible current-fragment" data-fragment-index=i)= item
+      li(class="fragment visible" data-fragment-index=i)= item

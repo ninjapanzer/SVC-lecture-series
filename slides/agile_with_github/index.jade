@@ -13,7 +13,7 @@ html(lang="en")
     .reveal
       .slides
         +titleSlide({title: "An Agile Life",subtitle: "With Github"})
-        +slideGroup({"data-background":'#0062AF'})
+        +slideGroup({"data-background":'#0062AF', class:'ul-color white'})
           // About me start
 
           +olFragmentSlide("I Am a...",
@@ -23,16 +23,18 @@ html(lang="en")
              "Github Nut",
              "Polyglot"])
 
-            +speakerNotes
+            +speakerNotes()
               | About Paul
 
           +littleTitleSlide("Where I developed my Skills")
           +bigTitleSlide("At Home")
             | The world is full of problems that sofware can fix
-            +speakerNotes
-              +note("Alone you learn how to express yourself")
-              +note("Alone you also learn all your bad habits")
-              +note("My favorite project was something I wrote for my mother")
+            +speakerNotes()
+              :markdown
+                - Alone you learn how to express yourself
+                - Alone you also learn all your bad habits
+                - My favorite project was something I wrote for my mother
+
           +bigTitleSlide("At School")
             | Learn to be a better you
             +speakerNotes
@@ -45,7 +47,7 @@ html(lang="en")
 
           +bigTitleSlide("At Work")
             | Coding for Cash
-            +speakerNotes
+            +speakerNotes()
               :markdown
                 - If you are not learning something at work it is likely time to move on.
                 - When you go out there for that first job don't get the job that has all the things you already know
@@ -54,12 +56,49 @@ html(lang="en")
                 - I was only able to take that job because I worked on web projects as as student prior to graduation
 
           +bigTitleSlide("Read Books")
-            quote If you can read a book you can become an expert in anything
+            quote If you can read a book you can become an expert in something
             div - Paul Scarrone
-            +speakerNotes
+            +speakerNotes()
               | If you can read a book you can do anything
           // About me end
         
+        +slideGroup()
+          +bigTitleSlide("Version Control")
+            img(src="images/version-control.png" width="150%" height="150%")
+            +speakerNotes()
+              :markdown
+                If you have ever worked on a project by yourself or with other and you will eventually bump into the problem of having made changes
+                to a file on more than once computer or you have broken something.
+
+          +bigTitleSlide("Git")
+            :markdown
+              Distributed, Smart, Open Workflow
+
+              Complex
+
+            +speakerNotes()
+              :markdown
+                This is "a" solution and there are plenty others. Many of which I have used but the only one that really makes sense is Git.
+                Git is an example of spite driven development
+
+
+          +littleTitleSlide("Spite Driven Development", {class:"unmarked"})
+            :markdown
+              - Created to host the **Linux kernel project**
+
+            +speakerNotes()
+              :markdown
+                - Its interesting to consider that one of the highest profile OSS projects used commercial software for its version control
+                - bitkeeper
+                - this concept of spite driven development is rather common in a world of middleware. When you begin developing a large project
+                you may descide to cut some corners and integrate middleware into your software
+
+          +bigTitleSlide("But I am not working on a big project!")
+            img(src="images/meme-versioncontrolallthings.jpg", class="fragment visible", data-fragment-index='0')
+            +speakerNotes()
+              :markdown
+                Its true that version control should absolutely be used with a big project by why should you use you
+
         +slideGroup()
           +bigTitleSlide("Agile")
             :markdown
@@ -72,10 +111,9 @@ html(lang="en")
  
             +speakerNotes()
               :markdown
-                - Things are Awesome
-                - Wonderful
+                - Agile is a ideal and is best applied as much makes sense for your needs.
 
-          +bigTitleSlide("Self-Ogranizing", {class: 'unmarked'})
+          +littleTitleSlide("Self-Ogranizing", {class: 'unmarked'})
             :markdown
               - The process by which individuals focus to solve a problem as a team that defines itself. - ([selforg.pdf][2])
 
@@ -83,7 +121,7 @@ html(lang="en")
 
               [2]: http://www.controlchaos.com/storage/scrum-articles/selforg.pdf
 
-          +bigTitleSlide("Cross-Functional", {class:'unmarked'})
+          +littleTitleSlide("Cross-Functional", {class:'unmarked'})
             :markdown
               - Teams that contain varied expertise working towards the same goal. - ([wikipedia][4])
 
@@ -101,11 +139,6 @@ html(lang="en")
               
               [1]: #/2
               [4]: http://en.wikipedia.org/wiki/Cross-functional_team
-
-        +slideGroup()
-          +bigTitleSlide("Version Control")
-          +bigTitleSlide("Git")
-          +ulSlide("A History",[])
 
         +slideGroup({"data-background":'#0079CF'})
           +bigTitleSlide("OSS")
