@@ -16,7 +16,7 @@ html(lang="en")
         +slideGroup()
           // About me start
 
-          +olSlide("I Am a...",
+          +olFragmentSlide("I Am a...",
             ["Sofware Engineer",
              "Open Source Advocate",
              "Web Developer",
@@ -36,19 +36,23 @@ html(lang="en")
           +bigTitleSlide("At School")
             | Learn to be a better you
             +speakerNotes
-              +note("School has a couple of purposes in our society.")
-              +note("One is for obvious and righteous expansion of our minds")
-              +note("The other is the flat truth that by completing these courses we will have provied ourselves worthy of employment in our chosen field")
-              +note("In reality what you do at school defines what you do immediately after graduation")
-              +note("There are wonderful opportunities and the competition will be high so School is the best place to start marketing yourself")
+              :markdown
+                - School has a couple of purposes in our society.
+                - One is for obvious and righteous expansion of our minds
+                - The other is the flat truth that by completing these courses we will have provied ourselves worthy of employment in our chosen field
+                - In reality what you do at school defines what you do immediately after graduation
+                - There are wonderful opportunities and the competition will be high so School is the best place to start marketing yourself
+
           +bigTitleSlide("At Work")
             | Coding for Cash
             +speakerNotes
-              +note("If you are not learning something at work it is likely time to move on.")
-              +note("When you go out there for that first job don't get the job that has all the things you already know")
-              +note("Strive for that job that stretches your limits and gives your a reason to make your a better developer")
-              +note("I went to work directly after I graduated at a small web development agency." 
-                + "I was only able to take that job because I worked on web projects as as student prior to graduation")
+              :markdown
+                - If you are not learning something at work it is likely time to move on.
+                - When you go out there for that first job don't get the job that has all the things you already know
+                - Strive for that job that stretches your limits and gives your a reason to make your a better developer
+                - I went to work directly after I graduated at a small web development agency.
+                - I was only able to take that job because I worked on web projects as as student prior to graduation
+
           +bigTitleSlide("Read Books")
             quote If you can read a book you can become an expert in anything
             div - Paul Scarrone
@@ -58,7 +62,45 @@ html(lang="en")
         
         +slideGroup()
           +bigTitleSlide("Agile")
-            | Things
+            :markdown
+              The process of defining requirements and solutions through colaboration between **[Self-Organizing][2]**, **[Cross-Functional][3]** teams.
+
+              \- ([wikipedia][1])
+              [1]: http://en.wikipedia.org/wiki/Agile_software_development
+              [2]: #/2/1
+              [3]: #/2/2
+ 
+            +speakerNotes()
+              :markdown
+                - Things are Awesome
+                - Wonderful
+
+          +bigTitleSlide("Self-Ogranizing", {class: 'unmarked'})
+            :markdown
+              - The process by which individuals focus to solve a problem as a team that defines itself. - ([selforg.pdf][2])
+
+              - In practice team should be allowed to will grow and shrink on its own based upon need.
+
+              [2]: http://www.controlchaos.com/storage/scrum-articles/selforg.pdf
+
+          +bigTitleSlide("Cross-Functional", {class:'unmarked'})
+            :markdown
+              - Teams that contain varied expertise working towards the same goal. - ([wikipedia][4])
+
+              - In the software development world expertises could include:
+        
+                - UX
+                - Design
+                - Deployment
+                - Front-end
+                - Back-end
+          
+              - These team members may not be present for the duration of the project. 
+              They will define their own required time on the team acting in a **[Self-Organizing][1]** manner. 
+              Along with good communication about project goals team weekenesses can be addressed quickly.
+              
+              [1]: #/2
+              [4]: http://en.wikipedia.org/wiki/Cross-functional_team
 
         +slideGroup()
           +bigTitleSlide("Version Control")
@@ -66,7 +108,13 @@ html(lang="en")
           +ulSlide("A History",[])
 
         +slideGroup()
-          +bigTitleSlide("OSS")
+          +bigTitleSlide("OSS", {"data-background":'#0079CF'})
+            :markdown
+              ## Office of Secret Service
+
+              ## Open Source Software
+
+              ## Operationally Special Slackers
 
         +slideGroup()
           +bigTitleSlide("Octocat Loves You!")
