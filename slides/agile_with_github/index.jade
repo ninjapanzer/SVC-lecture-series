@@ -106,6 +106,10 @@ html(lang="en")
               - Start building your portfolio
               - Time Travel
 
+            +speakerNotes()
+              :markdown
+                - Or "version now, worry later", or just "version now" becuase worry never seems to come into it
+
           +littleTitleSlide("Treat your code like you calling card")
             :markdown
               - Employeers want to see you code before the interview
@@ -115,18 +119,18 @@ html(lang="en")
             +speakerNotes()
               :markdown
                 - We work in an industry without formal certification of skills.
-                - Those that do the hiring rely on code tests and code in github to identfy you abilities
+                - Those that do the hiring rely on 'code tests' and code in github to identfy you abilities
+                - In my experience if you want to work for a 'cool' company you need to have these well cultivated 
+                - A repo show progression and volume of work which can help speak to your experience
 
-        +slideGroup()
-          +bigTitleSlide("Enter Github")
-            img(src="images/git-hook.jpg", width="50%", height="50%")
+          +littleTitleSlide("Go Back in Time")
+            div Have you ever deleted something?
+            img(src="images/signs-point-to-yes.jpg")
 
-          +bigTitleSlide("Be a Social Coder")
-            img(src="images/github.png", width="80%", height="80%")
-
-        +slideGroup()
+        +slideGroup({'data-background':'#808100', class:'ul-color white'})
           +littleTitleSlide("How does it work?")
             :markdown
+              - Repo
               - History
               - Commits
               - Branches
@@ -154,6 +158,28 @@ html(lang="en")
 
           +littleTitleSlide("Branching")
             img(src="images/git-history.png", style="background:white;", width="150%", height="150%")
+
+        
+
+        +slideGroup()
+          +bigTitleSlide("Enter Github")
+            img(src="images/git-hook.jpg", width="50%", height="50%")
+
+          +bigTitleSlide("Be a Social Coder")
+            img(src="images/github.png", width="80%", height="80%")
+
+          +littleTitleSlide("Is github different and git?")
+            :markdown
+              Idealogoically no but it imparts its own Workflow adding
+
+              - Forks
+              - Pull Requests
+
+            +speakerNotes()
+              :markdown
+                - Fork makes a copy of someone else's Repo for you to muck about it
+                - PR give you a and the project owner a safe way to review and accept your code
+
 
         +slideGroup()
           +bigTitleSlide("Agile is Social")
@@ -196,7 +222,21 @@ html(lang="en")
               [1]: #/2
               [4]: http://en.wikipedia.org/wiki/Cross-functional_team
 
-        +slideGroup({"data-background":'#0079CF'})
+        +slideGroup()
+          +bigTitleSlide("Agile Github")
+            :markdown
+              Github is specifially about working with others who are likely not in the same room as you
+
+              http://guides.github.com/overviews/flow/
+
+          +speakerNotes()
+            :markdown
+              - One thing that has led to the popularity of github is that you can look at others code
+              - Use their libraries
+              - And if you find a reason to supply your own work you can
+              - there is a solution for this. Its called the PR
+
+        +slideGroup({"data-background":'#0079CF', class:'ul-color white'})
           +bigTitleSlide("OSS")
             :markdown
               ## Office of Secret Service
@@ -205,18 +245,45 @@ html(lang="en")
 
               ## Operationally Special Slackers
 
-          +bigTitleSlide("Open Source and You")
+            +speakerNotes()
+              :markdown
+                - Some possible interpretations of OSS
 
-        +slideGroup()
-          +bigTitleSlide("Agile Github")
+          +littleTitleSlide("Getting involved")
             :markdown
-              http://guides.github.com/overviews/flow/
+              - Build up your portfolio
+              - Learn from others
+              - Make new friends
+
+            +speakerNotes()
+              :markdown
+                - You will not always have great projects to work on.
+                - Or know enough initially to make something big
+                - but you can always submit a PR to a worthy project and make the world of software better
+
+          +bigTitleSlide("It feels nice to give back")
+            +speakerNotes()
+              :markdown
+                - For many of us in the software field we will achieve interesting and well paying jobs
+                - If we are really lucky we will work for a company that uses and gives back to the open source community
+                - I was never a guy to go to soup kitchens but the world needs all kinds of helpers and this is how I help
+
+          +littleTitleSlide("Some things you can try")
+            :markdown
+              - Find a local business without a website and build it
+              - Ask your teachers
+              - Ask your mom
+
+            +speakerNotes()
+              :markdown
+                - Github can host simple static sites for free
 
         +slideGroup()
           +bigTitleSlide("Octocat Loves You!")
             img(src="images/baracktocat.jpg" width="50%" height="50%")
 
         +bigTitleSlide("Thank You!")
+
         +littleTitleSlide("Links")
           :markdown
             - [GitHub Workflow](http://guides.github.com/overviews/flow/)
