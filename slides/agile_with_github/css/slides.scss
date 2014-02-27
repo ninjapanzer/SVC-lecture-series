@@ -1,0 +1,12 @@
+div.left{
+
+}
+
+quote{
+  &:before{
+    content:'"';
+  }
+  &:after{
+    content:'"';
+  }
+}

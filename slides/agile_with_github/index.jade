@@ -14,14 +14,42 @@ html(lang="en")
       .slides
         +titleSlide({title: "An Agile Life",subtitle: "With Github"})
         +slideGroup()
+
+          +olSlide("I Am a...",
+            ["Sofware Engineer",
+             "Open Source Advocate",
+             "Web Developer",
+             "Github Nut",
+             "Polyglot"])
+
+            +speakerNotes
+              | About Paul
+
+          +littleTitleSlide("Where I developed my Skills")
+          +bigTitleSlide("At Home")
+            +speakerNotes
+              | Alone you learn how to express yourself
+              | Alone you also learn all your bad habits
+          +bigTitleSlide("At School")
+          +bigTitleSlide("At Work")
+            +speakerNotes
+              | If you are not learning something at work it is likely time to move on.
+              | When you go out there for that first job don't get the job that has all the things you already know
+              | Strive for that job that stretches your limits and gives your a reason to make your a better developer
+          +bigTitleSlide("Read Books")
+            quote If you can read a book you can become an expert in anything
+            div - Paul Scarrone
+            +speakerNotes
+              | If you can read a book you can do anything
+        +slideGroup()
           +bigTitleSlide("Octocat Loves You!")
-            img(src="./images/baraktocat.jpg" width="20%" height="20%")
+            img(src="images/baracktocat.jpg" width="50%" height="50%")
         +ulSlide("Octocat loves you", [
           "He is cute",
           "he is your friend"
           ])
           br/
-          img(src="http://octodex.github.com/images/daftpunktocat-thomas.gif" width="20%" height="20%")
+          img(src="http://octodex.github.com/images/daftpunktocat-thomas.gif" width="70%" height="70%")
         +bigTitleSlide("Title")
           p You are nice
         +slideGroup()

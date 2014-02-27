@@ -6,6 +6,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks( 'grunt-contrib-watch' );
   grunt.loadNpmTasks( 'grunt-contrib-connect' );
   grunt.loadNpmTasks( 'grunt-contrib-jade');
+  grunt.loadNpmTasks('grunt-contrib-sass');
 
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
@@ -14,7 +15,8 @@ module.exports = function(grunt) {
       server: {
         options: {
           port: port,
-          base: '.'
+          base: '.',
+          debug: true
         }
       }
     },
@@ -34,8 +36,23 @@ module.exports = function(grunt) {
         }]
       }
     },
-
+    sass: {
+      dist: {
+        files: [{
+          expand: true,
+          src: ['**/*.scss', '!bower_components/**/*.scss'],
+          ext: '.css'
+        }]
+      }
+    },
     watch: {
+      sass: {
+        files: ['**/*.scss'],
+        tasks: 'sass',
+        options:{
+          livereload: 35729
+        }
+      },
       jade: {
         files: ['**/*.jade'],
         tasks: 'jade',
