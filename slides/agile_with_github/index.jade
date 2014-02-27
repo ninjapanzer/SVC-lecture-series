@@ -100,7 +100,63 @@ html(lang="en")
                 Its true that version control should absolutely be used with a big project by why should you use you
 
         +slideGroup()
-          +bigTitleSlide("Agile")
+          +littleTitleSlide("Use Git Right Now")
+            :markdown
+              - No more __important_homework_v2_rev_final_final.docx__
+              - Start building your portfolio
+              - Time Travel
+
+          +littleTitleSlide("Treat your code like you calling card")
+            :markdown
+              - Employeers want to see you code before the interview
+              - Let recruiters seek you out
+              - Be famous
+
+            +speakerNotes()
+              :markdown
+                - We work in an industry without formal certification of skills.
+                - Those that do the hiring rely on code tests and code in github to identfy you abilities
+
+        +slideGroup()
+          +bigTitleSlide("Enter Github")
+            img(src="images/git-hook.jpg", width="50%", height="50%")
+
+          +bigTitleSlide("Be a Social Coder")
+            img(src="images/github.png", width="80%", height="80%")
+
+        +slideGroup()
+          +littleTitleSlide("How does it work?")
+            :markdown
+              - History
+              - Commits
+              - Branches
+
+          +littleTitleSlide("The History")
+            img(src="images/git-history.png", style="background:white;", width="150%", height="150%")
+
+          +littleTitleSlide("A Commit")
+            pre
+              code(data-trim="", contenteditable="", class='diff').
+                @@ -160,4 +195,11 @@ html(lang="en")
+                +bigTitleSlide("Octocat Loves You!")
+                 img(src="images/baracktocat.jpg" width="50%" height="50%")
+                +        +bigTitleSlide("Thank You!")
+                +        +littleTitleSlide("Links")
+                +          :markdown
+                +            - [GitHub Workflow](http://guides.github.com/overviews/flow/)
+                +            - [Git Windows](http://msysgit.github.io/)
+                +            - [Scrum](http://www.mountaingoatsoftware.com/agile/scrum)
+                +
+
+
+                     include ../shared/footer
+                \ No newline at end of file
+
+          +littleTitleSlide("Branching")
+            img(src="images/git-history.png", style="background:white;", width="150%", height="150%")
+
+        +slideGroup()
+          +bigTitleSlide("Agile is Social")
             :markdown
               The process of defining requirements and solutions through colaboration between **[Self-Organizing][2]**, **[Cross-Functional][3]** teams.
 
@@ -159,5 +215,12 @@ html(lang="en")
         +slideGroup()
           +bigTitleSlide("Octocat Loves You!")
             img(src="images/baracktocat.jpg" width="50%" height="50%")
+
+        +bigTitleSlide("Thank You!")
+        +littleTitleSlide("Links")
+          :markdown
+            - [GitHub Workflow](http://guides.github.com/overviews/flow/)
+            - [Git Windows](http://msysgit.github.io/)
+            - [Scrum](http://www.mountaingoatsoftware.com/agile/scrum)
 
     include ../shared/footer
