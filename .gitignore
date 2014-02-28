@@ -1,0 +1,8 @@
+.DS_Store
+node_modules
+slides/**/*.jade
+.sass-cache
+slides/**/*.scss
+Gruntfile.js
+package.json
+bower.json

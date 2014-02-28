@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Agile Development with Github</title>
+    <meta name="description" content="">
+    <meta name="author" content="Paul Scarrone">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="../bower_components/reveal.js/css/reveal.min.css">
+    <link id="theme" rel="stylesheet" href="../bower_components/reveal.js/css/theme/moon.css">
+    <link rel="stylesheet" href="css/slides.css">
+    <!-- For syntax highlighting-->
+    <link rel="stylesheet" href="../bower_components/reveal.js/lib/css/zenburn.css">
+    <script src="//localhost:35729/livereload.js"></script>
+    <script>var revealLocation = '../bower_components/reveal.js/'</script>
+    <!--if lt IE 9
+    script(src= revealLocation + 'lib/js/html5shiv.js')
+    
+    -->
+    <script type="text/javascript">document.write( '<link rel="stylesheet" href="' + revealLocation + 'css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );</script>
+  </head>
+  <link rel="external" type="text/html" src="../shared/head.jade">
+  <body>
+    <div class="reveal">
+      <div class="slides">
+            <section>
+              <h1>An Agile Life
+              </h1>
+              <h3>With Github
+              </h3>
+              <p>
+                <div class="left"><small>Paul Scarrone</small></div>
+                <div class="left"><small class="twitter">@PaulSCoders</small></div>
+                <div class="left"><small class="email">paul.scarrone@gmail.com</small></div>
+              </p>
+              <aside class="notes">Title Slide</aside>
+            </section>
+            <section data-background="#0062AF" class="ul-color white">
+              <!-- About me start-->
+                  <section>
+                    <h3>I Am a...</h3>
+                      <ol>
+                        <li data-fragment-index='0' class="fragment visible">Sofware Engineer</li>
+                        <li data-fragment-index='1' class="fragment visible">Open Source Advocate</li>
+                        <li data-fragment-index='2' class="fragment visible">Web Developer</li>
+                        <li data-fragment-index='3' class="fragment visible">Github Nut</li>
+                        <li data-fragment-index='4' class="fragment visible">Polyglot</li>
+                      </ol>
+                      <aside class="notes">About Paul
+                      </aside>
+                  </section>
+                  <section>
+                    <h3>Where I developed my Skills</h3>
+                  </section>
+                  <section>
+                    <h1>At Home</h1>The world is full of problems that sofware can fix
+                      <aside class="notes"><ul>
+<li>Alone you learn how to express yourself</li>
+<li>Alone you also learn all your bad habits</li>
+<li>My favorite project was something I wrote for my mother</li>
+</ul>
+
+                      </aside>
+                  </section>
+                  <section>
+                    <h1>At School</h1>Learn to be a better you
+                      <aside class="notes"><ul>
+<li>School has a couple of purposes in our society.</li>
+<li>One is for obvious and righteous expansion of our minds</li>
+<li>The other is the flat truth that by completing these courses we will have provied ourselves worthy of employment in our chosen field</li>
+<li>In reality what you do at school defines what you do immediately after graduation</li>
+<li>There are wonderful opportunities and the competition will be high so School is the best place to start marketing yourself</li>
+</ul>
+
+                      </aside>
+                  </section>
+                  <section>
+                    <h1>At Work</h1>Coding for Cash
+                      <aside class="notes"><ul>
+<li>If you are not learning something at work it is likely time to move on.</li>
+<li>When you go out there for that first job don&#39;t get the job that has all the things you already know</li>
+<li>Strive for that job that stretches your limits and gives your a reason to make your a better developer</li>
+<li>I went to work directly after I graduated at a small web development agency.</li>
+<li>I was only able to take that job because I worked on web projects as as student prior to graduation</li>
+</ul>
+
+                      </aside>
+                  </section>
+                  <section>
+                    <h1>Read Books</h1>
+                    <quote>If you can read a book you can become an expert in something</quote>
+                    <div>- Paul Scarrone</div>
+                      <aside class="notes">If you can read a book you can do anything
+                      </aside>
+                  </section>
+              <!-- About me end-->
+            </section>
+            <section>
+                  <section>
+                    <h1>Version Control</h1><img src="images/version-control.png" width="150%" height="150%">
+                      <aside class="notes"><p>If you have ever worked on a project by yourself or with other and you will eventually bump into the problem of having made changes
+to a file on more than once computer or you have broken something.</p>
+
+                      </aside>
+                  </section>
+                  <section>
+                    <h1>Git</h1><p>Distributed, Smart, Open Workflow</p>
+<p>Complex</p>
+
+                      <aside class="notes"><p>This is &quot;a&quot; solution and there are plenty others. Many of which I have used but the only one that really makes sense is Git.
+Git is an example of spite driven development</p>
+
+                      </aside>
+                  </section>
+                  <section class="unmarked">
+                    <h3>Spite Driven Development</h3><ul>
+<li>Created to host the <strong>Linux kernel project</strong></li>
+</ul>
+
+                      <aside class="notes"><ul>
+<li>Its interesting to consider that one of the highest profile OSS projects used commercial software for its version control</li>
+<li>bitkeeper</li>
+<li>this concept of spite driven development is rather common in a world of middleware. When you begin developing a large project
+you may descide to cut some corners and integrate middleware into your software</li>
+</ul>
+
+                      </aside>
+                  </section>
+                  <section>
+                    <h1>But I am not working on a big project!</h1><img src="images/meme-versioncontrolallthings.jpg" data-fragment-index="0" class="fragment visible">
+                      <aside class="notes"><p>Its true that version control should absolutely be used with a big project by why should you use you</p>
+
+                      </aside>
+                  </section>
+            </section>
+            <section>
+                  <section>
+                    <h3>Use Git Right Now</h3><ul>
+<li>No more <strong>important_homework_v2_rev_final_final.docx</strong></li>
+<li>Start building your portfolio</li>
+<li>Time Travel</li>
+</ul>
+
+                      <aside class="notes"><ul>
+<li>Or &quot;version now, worry later&quot;, or just &quot;version now&quot; becuase worry never seems to come into it</li>
+</ul>
+
+                      </aside>
+                  </section>
+                  <section>
+                    <h3>Treat your code like you calling card</h3><ul>
+<li>Employeers want to see you code before the interview</li>
+<li>Let recruiters seek you out</li>
+<li>Be famous</li>
+</ul>
+
+                      <aside class="notes"><ul>
+<li>We work in an industry without formal certification of skills.</li>
+<li>Those that do the hiring rely on &#39;code tests&#39; and code in github to identfy you abilities</li>
+<li>In my experience if you want to work for a &#39;cool&#39; company you need to have these well cultivated </li>
+<li>A repo show progression and volume of work which can help speak to your experience</li>
+</ul>
+
+                      </aside>
+                  </section>
+                  <section>
+                    <h3>Go Back in Time</h3>
+                    <div>Have you ever deleted something?</div><img src="images/signs-point-to-yes.jpg">
+                  </section>
+            </section>
+            <section data-background="#808100" class="ul-color white">
+                  <section>
+                    <h3>How does it work?</h3><ul>
+<li>Repo</li>
+<li>History</li>
+<li>Commits</li>
+<li>Branches</li>
+</ul>
+
+                  </section>
+                  <section>
+                    <h3>The History</h3><img src="images/git-history.png" style="background:white;" width="150%" height="150%">
+                  </section>
+                  <section>
+                    <h3>A Commit</h3>
+                    <pre><code data-trim="" contenteditable="" class="diff">@@ -160,4 +195,11 @@ html(lang="en")
++bigTitleSlide("Octocat Loves You!")
+ img(src="images/baracktocat.jpg" width="50%" height="50%")
++        +bigTitleSlide("Thank You!")
++        +littleTitleSlide("Links")
++          :markdown
++            - [GitHub Workflow](http://guides.github.com/overviews/flow/)
++            - [Git Windows](http://msysgit.github.io/)
++            - [Scrum](http://www.mountaingoatsoftware.com/agile/scrum)
++
+
+
+     include ../shared/footer
+\ No newline at end of file
+</code></pre>
+                  </section>
+                  <section>
+                    <h3>Branching</h3><img src="images/git-history.png" style="background:white;" width="150%" height="150%">
+                  </section>
+            </section>
+            <section>
+                  <section>
+                    <h1>Enter Github</h1><img src="images/git-hook.jpg" width="50%" height="50%">
+                  </section>
+                  <section>
+                    <h1>Be a Social Coder</h1><img src="images/github.png" width="80%" height="80%">
+                  </section>
+                  <section>
+                    <h3>Is github different and git?</h3><p>Idealogoically no but it imparts its own Workflow adding</p>
+<ul>
+<li>Forks</li>
+<li>Pull Requests</li>
+</ul>
+
+                      <aside class="notes"><ul>
+<li>Fork makes a copy of someone else&#39;s Repo for you to muck about it</li>
+<li>PR give you a and the project owner a safe way to review and accept your code</li>
+</ul>
+
+                      </aside>
+                  </section>
+            </section>
+            <section>
+                  <section>
+                    <h1>Agile is Social</h1><p>The process of defining requirements and solutions through colaboration between <strong><a href="#/2/1">Self-Organizing</a></strong>, <strong><a href="#/2/2">Cross-Functional</a></strong> teams.</p>
+<p>- (<a href="http://en.wikipedia.org/wiki/Agile_software_development">wikipedia</a>)</p>
+
+                      <aside class="notes"><ul>
+<li>Agile is a ideal and is best applied as much makes sense for your needs.</li>
+</ul>
+
+                      </aside>
+                  </section>
+                  <section class="unmarked">
+                    <h3>Self-Organizing</h3><ul>
+<li><p>The process by which individuals focus to solve a problem as a team that defines itself. - (<a href="http://www.controlchaos.com/storage/scrum-articles/selforg.pdf">selforg.pdf</a>)</p>
+</li>
+<li><p>In practice team should be allowed to will grow and shrink on its own based upon need.</p>
+</li>
+</ul>
+
+                  </section>
+                  <section class="unmarked">
+                    <h3>Cross-Functional</h3><ul>
+<li><p>Teams that contain varied expertise working towards the same goal. - (<a href="http://en.wikipedia.org/wiki/Cross-functional_team">wikipedia</a>)</p>
+</li>
+<li><p>In the software development world expertises could include:</p>
+<ul>
+<li>UX</li>
+<li>Design</li>
+<li>Deployment</li>
+<li>Front-end</li>
+<li>Back-end</li>
+</ul>
+</li>
+<li><p>These team members may not be present for the duration of the project. 
+They will define their own required time on the team acting in a <strong><a href="#/2">Self-Organizing</a></strong> manner. 
+Along with good communication about project goals team weekenesses can be addressed quickly.</p>
+</li>
+</ul>
+
+                  </section>
+            </section>
+            <section>
+                  <section>
+                    <h1>Agile Github</h1><p>Github is specifially about working with others who are likely not in the same room as you</p>
+<p><a href="http://guides.github.com/overviews/flow/">http://guides.github.com/overviews/flow/</a></p>
+
+                  </section>
+                <aside class="notes"><ul>
+<li>One thing that has led to the popularity of github is that you can look at others code</li>
+<li>Use their libraries</li>
+<li>And if you find a reason to supply your own work you can</li>
+<li>there is a solution for this. Its called the PR</li>
+</ul>
+
+                </aside>
+            </section>
+            <section data-background="#0079CF" class="ul-color white">
+                  <section>
+                    <h1>OSS</h1><h2 id="office-of-secret-service">Office of Secret Service</h2>
+<h2 id="open-source-software">Open Source Software</h2>
+<h2 id="operationally-special-slackers">Operationally Special Slackers</h2>
+
+                      <aside class="notes"><ul>
+<li>Some possible interpretations of OSS</li>
+</ul>
+
+                      </aside>
+                  </section>
+                  <section>
+                    <h3>Getting involved</h3><ul>
+<li>Build up your portfolio</li>
+<li>Learn from others</li>
+<li>Make new friends</li>
+</ul>
+
+                      <aside class="notes"><ul>
+<li>You will not always have great projects to work on.</li>
+<li>Or know enough initially to make something big</li>
+<li>but you can always submit a PR to a worthy project and make the world of software better</li>
+</ul>
+
+                      </aside>
+                  </section>
+                  <section>
+                    <h1>It feels nice to give back</h1>
+                      <aside class="notes"><ul>
+<li>For many of us in the software field we will achieve interesting and well paying jobs</li>
+<li>If we are really lucky we will work for a company that uses and gives back to the open source community</li>
+<li>I was never a guy to go to soup kitchens but the world needs all kinds of helpers and this is how I help</li>
+</ul>
+
+                      </aside>
+                  </section>
+                  <section>
+                    <h3>Some things you can try</h3><ul>
+<li>Find a local business without a website and build it</li>
+<li>Ask your teachers</li>
+<li>Ask your mom</li>
+</ul>
+
+                      <aside class="notes"><ul>
+<li>Github can host simple static sites for free</li>
+</ul>
+
+                      </aside>
+                  </section>
+            </section>
+            <section>
+                  <section>
+                    <h1>Octocat Loves You!</h1><img src="images/baracktocat.jpg" width="50%" height="50%">
+                  </section>
+            </section>
+            <section>
+              <h1>Thank You!</h1>
+            </section>
+            <section>
+              <h3>Links</h3><ul>
+<li><a href="http://guides.github.com/overviews/flow/">GitHub Workflow</a></li>
+<li><a href="http://msysgit.github.io/">Git Windows</a></li>
+<li><a href="http://www.mountaingoatsoftware.com/agile/scrum">Scrum</a></li>
+</ul>
+
+            </section>
+      </div>
+    </div>
+    <script type="text/javascript" src="../bower_components/reveal.js/lib/js/head.min.js"></script>
+    <script type="text/javascript" src="../bower_components/reveal.js/js/reveal.js"></script>
+    <script>
+      // Full list of configuration options available here:
+      // https://github.com/hakimel/reveal.js#configuration
+       Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        theme: 'moon',
+        slideNumber: true,
+        transition: 'concave',
+        // Parallax scrolling
+        // parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+        // parallaxBackgroundSize: '2100px 900px',
+        // Optional libraries used to extend on reveal.js
+        dependencies: [
+          { src: revealLocation + 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: revealLocation + 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: revealLocation + 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: revealLocation + 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+          { src: revealLocation + 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+        ]
+       });
+    </script>
+  </body>
+</html>
