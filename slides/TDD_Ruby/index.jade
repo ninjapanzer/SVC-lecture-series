@@ -11,23 +11,9 @@ html(lang="en")
   body
     .reveal
       .slides
-        +titleSlide({title: "Agile with Github",subtitle: "Thing"})
-        +ulSlide("Love the Octocat", [
-          "He is cute",
-          "he is your friend"
-          ])
-        +bigTitleSlide("thing")
-          p wonder
-        +slide()
-          p amazing
-        +slideGroup()
-          +bigTitleSlide("top")
-          +bigTitleSlide("bottom")
-        +slide
+        +titleSlide({title: "TDD with Ruby",subtitle: "Better Development"})
+        +littleTitleSlide("Test Driven Development")
           :markdown
-            # I love Github
-            ## You should too
-                
-            things
+            TDD
 
     include ../shared/footer
