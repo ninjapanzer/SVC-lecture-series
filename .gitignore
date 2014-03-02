@@ -4,3 +4,4 @@ bower_components
 slides/**/*.html
 .sass-cache
 slides/**/*.css
+npm-debug.log

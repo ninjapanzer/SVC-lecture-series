@@ -1,0 +1,33 @@
+- var revealLocation = '../bower_components/reveal.js/'
+doctype html
+html(lang="en")
+
+  include ../shared/slide_mixins
+
+  include ../shared/head
+
+  link(rel='external' type='text/html' src="../shared/head.jade")
+
+  body
+    .reveal
+      .slides
+        +titleSlide({title: "Agile with Github",subtitle: "Thing"})
+        +ulSlide("Love the Octocat", [
+          "He is cute",
+          "he is your friend"
+          ])
+        +bigTitleSlide("thing")
+          p wonder
+        +slide()
+          p amazing
+        +slideGroup()
+          +bigTitleSlide("top")
+          +bigTitleSlide("bottom")
+        +slide
+          :markdown
+            # I love Github
+            ## You should too
+                
+            things
+
+    include ../shared/footer
