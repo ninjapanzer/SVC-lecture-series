@@ -3,6 +3,7 @@ node_modules
 slides/**/*.jade
 .sass-cache
 slides/**/*.scss
+npm-debug.log
 Gruntfile.js
 package.json
 bower.json
