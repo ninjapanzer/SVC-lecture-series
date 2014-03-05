@@ -14,6 +14,8 @@ TDD
 
 ### Kata
   > [CodeKata][5]
+  > Code kata's is a structure to help with build craftmans ship by forcing the student to practice common problems to find efficent answers.
+  > [Ruby Warrior][6]
 
 ### Testing
 ### Overhead
@@ -27,3 +29,4 @@ TDD
 [3]: http://rvm.io/
 [4]: http://rubyinstaller.org/add-ons/pik/
 [5]: http://codekata.com/
+[6]: https://www.bloc.io/ruby-warrior/#/
